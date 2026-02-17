@@ -7,6 +7,7 @@ import {
   Mail, 
   MapPin 
 } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -51,12 +52,22 @@ const Footer = () => {
         <div>
           <h3 className="text-white text-lg font-semibold mb-5">Quick Links</h3>
           <ul className="space-y-3 text-sm">
-            {['Home', 'About Us', 'Services', 'Projects Gallery', 'Contact'].map((link) => (
-              <li key={link} className="hover:text-white hover:translate-x-1 cursor-pointer transition-all">
-                {link}
+              <li className="hover:text-white hover:translate-x-1 cursor-pointer transition-all">
+                Home
+              </li>             
+              <Link href="/about" className="hover:text-white hover:translate-x-1 cursor-pointer transition-all">
+                About Us
+              </Link>
+              <li className="hover:text-white hover:translate-x-1 cursor-pointer transition-all mt-3">
+                Services
               </li>
-            ))}
-          </ul>
+              <li className="hover:text-white hover:translate-x-1 cursor-pointer transition-all">
+                Projects Gallery
+              </li>
+              <li className="hover:text-white hover:translate-x-1 cursor-pointer transition-all">
+                Contact
+              </li>
+            </ul>
         </div>
 
         {/* Contact Info */}
