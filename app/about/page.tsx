@@ -10,6 +10,7 @@ import {
   MoveRight,
 } from "lucide-react";
 import Image from "next/image";
+import Manage from "../components/Manage";
 
 interface ButtonProps {
   text: string;
@@ -213,6 +214,7 @@ export default function ConstructionPage() {
           />
         </div>
       </section>
+         <Manage />
       </div>
     </main>
   );

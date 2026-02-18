@@ -64,9 +64,9 @@ const Footer = () => {
               <li className="hover:text-white hover:translate-x-1 cursor-pointer transition-all">
                 Projects Gallery
               </li>
-              <li className="hover:text-white hover:translate-x-1 cursor-pointer transition-all">
-                Contact
-              </li>
+              <Link href="/contact" className="hover:text-white hover:translate-x-1 cursor-pointer transition-all">
+                Contact Us
+              </Link>
             </ul>
         </div>
 
@@ -102,7 +102,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-[11px] tracking-wider text-gray-500 uppercase">
         <p>© 2025 XYZ COMPANY. All rights reserved.</p>
         <p className="mt-2">
-          Developed By <span className="text-[#00abeb] font-bold">DW INNOVATION PVT. LTD.</span>
+          Developed By <span className="text-white font-bold">DW INNOVATION PVT. LTD.</span>
         </p>
       </div>
     </footer>
