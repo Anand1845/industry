@@ -19,19 +19,46 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <div className="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider">
-        <a href="#" className="flex items-center gap-1 hover:text-blue-400 transition">
-          Resources <ChevronDown size={14} />
-        </a>
-        <a href="#" className="flex items-center gap-1 hover:text-blue-400 transition">
-          Products <ChevronDown size={14} />
-        </a>
-        <a href="#" className="flex items-center gap-1 hover:text-blue-400 transition">
-          Applications <ChevronDown size={14} />
-        </a>
-        <a href="#" className="hover:text-blue-400 transition">
-          Case Studies
-        </a>
-      </div>
+  
+  <a
+    href="#"
+    className="relative overflow-hidden px-3 py-2 group flex items-center gap-1"
+  >
+    <span className="relative z-10 flex items-center gap-1">
+      Resources <ChevronDown size={14} />
+    </span>
+    <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
+  </a>
+
+  <a
+    href="#"
+    className="relative overflow-hidden px-3 py-2 group flex items-center gap-1"
+  >
+    <span className="relative z-10 flex items-center gap-1">
+      Products <ChevronDown size={14} />
+    </span>
+    <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
+  </a>
+
+  <a
+    href="#"
+    className="relative overflow-hidden px-3 py-2 group flex items-center gap-1"
+  >
+    <span className="relative z-10 flex items-center gap-1">
+      Applications <ChevronDown size={14} />
+    </span>
+    <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
+  </a>
+
+  <a
+    href="#"
+    className="relative overflow-hidden px-3 py-2 group"
+  >
+    <span className="relative z-10">Case Studies</span>
+    <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
+  </a>
+
+</div>
 
       {/* Action Buttons */}
       <div className="flex items-center gap-6">
