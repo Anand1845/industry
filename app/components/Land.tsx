@@ -2,32 +2,6 @@ import React from 'react';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const services = [
-  {
-    title: "DUCTING",
-    description:
-      "Our custom fabricated stainless steel ducting products are highly reliable and distributed across the world.",
-    image: "/od.jpeg",
-  },
-  {
-    title: "STACKS",
-    description:
-      "Our stacks are designed to maintain air quality emissions in compliance with modern requirements for your facility.",
-    image: "/os.jpeg",
-  },
-  {
-    title: "TANKS",
-    description:
-      "We specialize in the fabrication of custom industrial tanks of all kinds including stainless steel tanks.",
-    image: "/ot.jpeg",
-  },
-  {
-    title: "STRUCTURAL",
-    description:
-      "Our primary business is providing design, fabrication, and erection of structural steel for commercial or industrial buildings and bridges.",
-    image: "/oss.jpeg",
-  },
-];
 
 export default function IndustrialServices() {
 
@@ -46,59 +20,6 @@ export default function IndustrialServices() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-16 font-sans">
-
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className='font-semibold text-5xl mb-4'
-      >
-        WE HAVE
-      </motion.h1>
-
-      {/* Services Grid */}
-      <motion.div
-        variants={container}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16"
-      >
-        {services.map((service, index) => (
-          <motion.div
-            key={index}
-            variants={item}
-            whileHover={{ scale: 1.03 }}
-            className="relative h-64 group overflow-hidden cursor-pointer"
-          >
-
-            <div
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-              style={{ backgroundImage: `url(${service.image})` }}
-            />
-
-            <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors" />
-
-            <div className="relative h-full p-8 flex flex-col justify-center">
-              <h2 className="text-white text-4xl font-black mb-2 tracking-tighter">
-                {service.title}
-              </h2>
-
-              <p className="text-gray-200 text-sm max-w-70 leading-relaxed">
-                {service.description}
-              </p>
-
-              <motion.div
-                whileHover={{ x: 5 }}
-                className="absolute bottom-6 right-6 bg-orange-600 p-3 hover:bg-orange-500 transition-colors"
-              >
-                <ArrowRight className="text-white w-6 h-6" />
-              </motion.div>
-            </div>
-
-          </motion.div>
-        ))}
-      </motion.div>
 
       {/* Bottom Text Content */}
       <motion.div
@@ -153,7 +74,7 @@ export default function IndustrialServices() {
       </motion.div>
 
       {/* another section */}
-      <div className="flex flex-col md:flex-row min-h-125 w-full font-sans mt-4">
+      <div className="flex flex-col md:flex-row min-h-125 w-full font-sans mt-10">
 
         {/* Posters */}
         <motion.section

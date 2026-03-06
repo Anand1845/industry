@@ -1,9 +1,11 @@
 "use client";
-import { useRef } from "react";
-import { ArrowRight, FileText, Star, ChevronLeft, ChevronRight } from "lucide-react";
+
+import { ArrowRight, FileText, Star, ChevronLeft, ChevronRight, Scroll, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Land from "./components/Land";
 import { motion } from "framer-motion";
+import Roll from "./components/Roll";
+import New from "./components/New";
 
 export default function Home() {
   const industryData = [
@@ -29,18 +31,6 @@ export default function Home() {
     { title: "Industrial PNG", image: "/lp2.jpeg" },
     { title: "CNG", image: "/lp3.jpeg" },
   ];
-
-  const scrollRef = useRef<HTMLDivElement | null>(null);
-
-  const scroll = (direction: "left" | "right") => {
-    if (scrollRef.current) {
-      const scrollAmount = 300;
-      scrollRef.current.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
 
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -205,52 +195,32 @@ export default function Home() {
       </section>
 
       {/* SUB BUSINESSES */}
-      <section className="max-w-7xl mx-auto px-4 py-12 font-sans relative">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8 uppercase tracking-wide">
-          Sub Businesses
-        </h2>
+       <div className="flex items-start justify-between w-full p-12 bg-white group cursor-pointer">
+  
+        {/* Text */}
+        <div className="flex flex-col space-y-2">
+          <h2 className="text-6xl md:text-7xl font-bold tracking-tight text-[#4b5563]">
+            <span className="bg-[#0056b3] text-white px-5 py-2 rounded-r-2xl rounded-l-md mr-3">
+              8+ Decades
+            </span>
+            of Trust
+          </h2>
 
-        <button
-          onClick={() => scroll("left")}
-          className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md p-2 rounded-full"
-        >
-          <ChevronLeft size={24} />
-        </button>
-
-        <button
-          onClick={() => scroll("right")}
-          className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md p-2 rounded-full"
-        >
-          <ChevronRight size={24} />
-        </button>
-
-        <div
-          ref={scrollRef}
-          className="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar"
-        >
-          {businesses.map((item, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.05 }}
-              className="min-w-62.5 shrink-0 flex flex-col gap-4 group cursor-pointer"
-            >
-              <div className="relative aspect-4/3 overflow-hidden rounded-sm">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <h3 className="text-xl font-bold text-gray-700">
-                {item.title}
-              </h3>
-            </motion.div>
-          ))}
+          <h2 className="text-6xl md:text-7xl font-bold tracking-tight text-[#4b5563]">
+            and Excellence
+          </h2>
         </div>
-      </section>
 
+        {/* Arrow */}
+        <div className="flex items-start">
+          <ArrowUpRight
+            className="w-20 h-20 text-[#0056b3] transition-transform duration-300 group-hover:translate-x-2 group-hover:-translate-y-2"
+            strokeWidth={3}
+          />
+        </div>
+      </div>
+          <Roll />
+       <New/>
       <Land />
 
       {/* CTA */}
