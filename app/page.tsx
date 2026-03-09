@@ -138,87 +138,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* XYZ INDUSTRY */}
-      <section className="max-w-7xl mx-auto px-6 py-16 bg-white font-sans">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-          <motion.div
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            variants={fadeUp}
-            className="space-y-6"
-          >
-            <span className="inline-block px-4 py-1 bg-rose-50 text-gray-700 text-sm font-medium rounded-full">
-              Know More
-            </span>
-
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 tracking-tight">
-              XYZ INDUSTRY
-            </h1>
-
-            <p className="text-gray-600">
-              Established in the year 2013 at Pune, Maharashtra, we
-              <span className="font-bold text-gray-800"> XYZ INDUSTRY </span>
-              are a Sole Proprietorship based firm engaged as a Wholesale Supplier.
-            </p>
-
-            <div className="flex items-center gap-2 pt-4">
-              <Star className="w-5 h-5 text-red-500 fill-red-500" />
-              <span className="text-xl italic font-bold text-emerald-800">
-                Best industry since 2001
-              </span>
-            </div>
-
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              className="flex items-center gap-2 bg-[#003d5b] text-white px-8 py-3 rounded-full"
-            >
-              <ArrowRight className="w-4 h-4" />
-              Explore more
-            </motion.button>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 80 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="relative"
-          >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <img src="/oil.jpeg" alt="" className="w-full h-100 object-cover" />
-            </div>
-          </motion.div>
-
-        </div>
-      </section>
-
       {/* SUB BUSINESSES */}
-       <div className="flex items-start justify-between w-full p-12 bg-white group cursor-pointer">
-  
-        {/* Text */}
-        <div className="flex flex-col space-y-2">
-          <h2 className="text-6xl md:text-7xl font-bold tracking-tight text-[#4b5563]">
-            <span className="bg-[#0056b3] text-white px-5 py-2 rounded-r-2xl rounded-l-md mr-3">
-              8+ Decades
-            </span>
-            of Trust
-          </h2>
+       <div className="w-full bg-white py-12">
+  <div className="max-w-7xl mx-auto px-16">
+    
+    <div className="flex items-start justify-between w-full group cursor-pointer">
+      
+      {/* Text */}
+      <div className="flex flex-col space-y-2">
+        <h2 className="text-6xl md:text-7xl font-bold tracking-tight text-[#4b5563]">
+          <span className="bg-[#0056b3] text-white px-5 py-2 rounded-r-2xl rounded-l-md mr-3">
+            8+ Decades
+          </span>
+          of Trust
+        </h2>
 
-          <h2 className="text-6xl md:text-7xl font-bold tracking-tight text-[#4b5563]">
-            and Excellence
-          </h2>
-        </div>
-
-        {/* Arrow */}
-        <div className="flex items-start">
-          <ArrowUpRight
-            className="w-20 h-20 text-[#0056b3] transition-transform duration-300 group-hover:translate-x-2 group-hover:-translate-y-2"
-            strokeWidth={3}
-          />
-        </div>
+        <h2 className="text-6xl md:text-7xl font-bold tracking-tight text-[#4b5563]">
+          and Excellence
+        </h2>
       </div>
+
+      {/* Arrow */}
+      <div className="flex items-start">
+        <ArrowUpRight
+          className="w-20 h-20 text-[#0056b3] transition-transform duration-300 group-hover:translate-x-2 group-hover:-translate-y-2"
+          strokeWidth={3}
+        />
+      </div>
+
+    </div>
+
+  </div>
+</div>
           <Roll />
        <New/>
       <Land />

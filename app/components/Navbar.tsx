@@ -41,6 +41,14 @@ const Navbar = () => {
   </a>
 
   <a
+    href="#"
+    className="relative overflow-hidden px-3 py-2 group"
+  >
+    <span className="relative z-10">Case Studies</span>
+    <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
+  </a>
+  
+  <a
     href="/contact"
     className="relative overflow-hidden px-3 py-2 group flex items-center gap-1"
   >
@@ -50,13 +58,6 @@ const Navbar = () => {
     <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
   </a>
 
-  <a
-    href="#"
-    className="relative overflow-hidden px-3 py-2 group"
-  >
-    <span className="relative z-10">Case Studies</span>
-    <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
-  </a>
 
 </div>
 

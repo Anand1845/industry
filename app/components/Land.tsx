@@ -19,7 +19,7 @@ export default function IndustrialServices() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16 font-sans">
+    <section className="max-w-8xl mx-auto px-16 py-16 font-sans">
 
       {/* Bottom Text Content */}
       <motion.div

@@ -49,89 +49,12 @@ export default function ContactPage() {
     show: { opacity: 1, y: 0 },
   };
 
-  const services = [
-    {
-      title: "DUCTING",
-      description:
-        "Our custom fabricated stainless steel ducting products are highly reliable and distributed across the world.",
-      image: "/od.jpeg",
-    },
-    {
-      title: "STACKS",
-      description:
-        "Our stacks are designed to maintain air quality emissions in compliance with modern requirements for your facility.",
-      image: "/os.jpeg",
-    },
-    {
-      title: "TANKS",
-      description:
-        "We specialize in the fabrication of custom industrial tanks of all kinds including stainless steel tanks.",
-      image: "/ot.jpeg",
-    },
-    {
-      title: "STRUCTURAL",
-      description:
-        "Our primary business is providing design, fabrication, and erection of structural steel for commercial or industrial buildings and bridges.",
-      image: "/oss.jpeg",
-    },
-  ];
-
   return (
     <>
       <Cont />
 
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="font-semibold text-5xl mb-4 text-center"
-      >
-        WE HAVE
-      </motion.h1>
 
-      {/* SERVICES GRID */}
-      <motion.div
-        variants={container}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 px-6"
-      >
-        {services.map((service, index) => (
-          <motion.div
-            key={index}
-            variants={item}
-            whileHover={{ scale: 1.03 }}
-            className="relative h-64 group overflow-hidden cursor-pointer"
-          >
-            <div
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-              style={{ backgroundImage: `url(${service.image})` }}
-            />
-
-            <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors" />
-
-            <div className="relative h-full p-8 flex flex-col justify-center">
-              <h2 className="text-white text-4xl font-black mb-2 tracking-tighter">
-                {service.title}
-              </h2>
-
-              <p className="text-gray-200 text-sm max-w-xs leading-relaxed">
-                {service.description}
-              </p>
-
-              <motion.div
-                whileHover={{ x: 5 }}
-                className="absolute bottom-6 right-6 bg-orange-600 p-3 hover:bg-orange-500 transition-colors"
-              >
-                <ArrowRight className="text-white w-6 h-6" />
-              </motion.div>
-            </div>
-          </motion.div>
-        ))}
-      </motion.div>
-
-      <div className="min-h-screen bg-black text-white">
+      <div className="min-h-screen bg-white text-black">
         {/* HERO */}
         <motion.section
           initial={{ opacity: 0 }}
@@ -139,7 +62,7 @@ export default function ContactPage() {
           transition={{ duration: 1 }}
           className="py-20 text-center bg-[url('/oil-bg.jpg')] bg-cover bg-center relative"
         >
-          <div className="absolute inset-0 bg-black/70"></div>
+          <div className="absolute inset-0 bg-white"></div>
 
           <motion.div
             variants={fadeUp}
@@ -151,7 +74,7 @@ export default function ContactPage() {
               Contact Our Energy Experts
             </h1>
 
-            <p className="text-lg text-gray-300">
+            <p className="text-lg text-black">
               Reliable Oil & Gas Solutions. Get in touch for partnerships,
               inquiries, or technical consultation.
             </p>
@@ -183,7 +106,7 @@ export default function ContactPage() {
                   placeholder="Full Name"
                   value={form.name}
                   onChange={handleChange}
-                  className="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                  className="w-full p-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
                   required
                 />
 
@@ -193,7 +116,7 @@ export default function ContactPage() {
                   placeholder="Email Address"
                   value={form.email}
                   onChange={handleChange}
-                  className="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                  className="w-full p-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
                   required
                 />
 
@@ -203,7 +126,7 @@ export default function ContactPage() {
                   placeholder="Company Name"
                   value={form.company}
                   onChange={handleChange}
-                  className="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                  className="w-full p-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 />
 
                 <textarea
@@ -212,7 +135,7 @@ export default function ContactPage() {
                   rows={5}
                   value={form.message}
                   onChange={handleChange}
-                  className="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                  className="w-full p-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
                   required
                 />
 
@@ -227,24 +150,24 @@ export default function ContactPage() {
 
             {/* CONTACT INFO */}
             <motion.div variants={fadeUp} className="space-y-8">
-              <div className="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-gray-700 shadow-xl">
+              <div className="bg-white backdrop-blur-lg p-8 rounded-2xl border border-gray-700 shadow-xl">
                 <h2 className="text-3xl font-semibold mb-6">
                   Contact Information
                 </h2>
 
-                <div className="space-y-6 text-gray-300">
+                <div className="space-y-6 text-black">
                   <div className="flex items-center gap-4">
-                    <Phone className="text-white" />
+                    <Phone className="text-black" />
                     <span>+1 (800) 123-4567</span>
                   </div>
 
                   <div className="flex items-center gap-4">
-                    <Mail className="text-white" />
+                    <Mail className="text-black" />
                     <span>info@youroilcompany.com</span>
                   </div>
 
                   <div className="flex items-center gap-4">
-                    <MapPin className="text-white" />
+                    <MapPin className="text-black" />
                     <span>Houston, Texas, USA</span>
                   </div>
                 </div>

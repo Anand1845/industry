@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import Manage from "../components/Manage";
 import { motion } from "framer-motion";
+import Ourj from "../components/Ourj";
 
 interface ButtonProps {
   text: string;
@@ -193,7 +194,8 @@ export default function ConstructionPage() {
         </motion.section>
 
         <Manage />
-
+        <h1 className="text-4xl font-medium">OUR JOURNEY</h1>
+         <Ourj/>
         {/* SUSTAINABILITY SECTION */}
         <motion.section className="relative min-h-125 w-full flex items-center justify-center py-10 px-4 sm:px-8" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1 }}>
           <div className="absolute inset-0 z-0 bg-cover bg-center" style={{ backgroundImage: "url('/lp4.jpeg')" }}>

@@ -62,8 +62,9 @@ export default function SolutionsSection() {
       variants={container}
       className="relative w-full bg-white py-24 overflow-hidden"
     >
-      <div className="max-w-450 mx-auto flex flex-col md:flex-row items-center gap-16 px-6">
-        
+      {/* MAIN CONTAINER WITH LEFT & RIGHT PADDING */}
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row  gap-16 px-6 md:px-12 lg:px-20">
+
         {/* LEFT CONTENT */}
         <motion.div
           variants={container}
@@ -181,28 +182,6 @@ export default function SolutionsSection() {
         </motion.div>
       </div>
 
-      {/* DOT PATTERN */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.1 }}
-        transition={{ delay: 1 }}
-        className="absolute top-0 left-0"
-      >
-        <div className="grid grid-cols-6 gap-4 p-10">
-          {[...Array(36)].map((_, i) => (
-            <motion.div
-              key={i}
-              animate={{ y: [0, -5, 0] }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                delay: i * 0.1,
-              }}
-              className="w-2 h-2 bg-gray-400 rounded-full"
-            />
-          ))}
-        </div>
-      </motion.div>
     </motion.section>
   );
 }
