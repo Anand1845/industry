@@ -63,7 +63,7 @@ export default function ContactPage() {
           className="py-20 text-center bg-[url('/oil-bg.jpg')] bg-cover bg-center relative"
         >
           <div className="absolute inset-0 bg-white"></div>
-
+{/* 
           <motion.div
             variants={fadeUp}
             initial="hidden"
@@ -78,114 +78,150 @@ export default function ContactPage() {
               Reliable Oil & Gas Solutions. Get in touch for partnerships,
               inquiries, or technical consultation.
             </p>
-          </motion.div>
+          </motion.div> */}
         </motion.section>
 
         {/* CONTACT SECTION */}
-        <motion.section
-          className="py-20 px-6 md:px-20"
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-        >
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* FORM */}
-            <motion.div
-              variants={fadeUp}
-              className="bg-white/5 backdrop-blur-lg p-8 rounded-2xl shadow-xl border border-gray-700"
-            >
-              <h2 className="text-3xl font-semibold mb-6">
-                Send Us a Message
-              </h2>
+       <motion.section
+  className="py-10 px-6 md:px-20 bg-white text-black "
+  variants={staggerContainer}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.3 }}
+>
+  {/* Heading */}
+  <div className="text-center mb-16">
+    <h2 className="text-4xl md:text-5xl font-bold mb-4">
+      Get In Touch
+    </h2>
+    <p className="text-gray-400 max-w-2xl mx-auto">
+      We'd love to hear from you. Send us a message and our team will get back
+      to you as soon as possible.
+    </p>
+  </div>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full Name"
-                  value={form.name}
-                  onChange={handleChange}
-                  className="w-full p-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                  required
-                />
+  {/* GRID */}
+  <div className="grid md:grid-cols-2 gap-12">
 
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email Address"
-                  value={form.email}
-                  onChange={handleChange}
-                  className="w-full p-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                  required
-                />
+    {/* CONTACT INFO */}
+    <motion.div
+      variants={fadeUp}
+      className="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10 shadow-2xl"
+    >
+      <h3 className="text-3xl font-semibold mb-10">Contact Information</h3>
 
-                <input
-                  type="text"
-                  name="company"
-                  placeholder="Company Name"
-                  value={form.company}
-                  onChange={handleChange}
-                  className="w-full p-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                />
+      <div className="space-y-8">
 
-                <textarea
-                  name="message"
-                  placeholder="Your Message"
-                  rows={5}
-                  value={form.message}
-                  onChange={handleChange}
-                  className="w-full p-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                  required
-                />
-
-                <button
-                  type="submit"
-                  className="w-full bg-white hover:bg-yellow-600 text-black font-semibold py-3 rounded-lg transition duration-300"
-                >
-                  Submit Inquiry
-                </button>
-              </form>
-            </motion.div>
-
-            {/* CONTACT INFO */}
-            <motion.div variants={fadeUp} className="space-y-8">
-              <div className="bg-white backdrop-blur-lg p-8 rounded-2xl border border-gray-700 shadow-xl">
-                <h2 className="text-3xl font-semibold mb-6">
-                  Contact Information
-                </h2>
-
-                <div className="space-y-6 text-black">
-                  <div className="flex items-center gap-4">
-                    <Phone className="text-black" />
-                    <span>+1 (800) 123-4567</span>
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <Mail className="text-black" />
-                    <span>info@youroilcompany.com</span>
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <MapPin className="text-black" />
-                    <span>Houston, Texas, USA</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* MAP */}
-              <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-700">
-                <iframe
-                  src="https://www.google.com/maps?q=Houston&output=embed"
-                  width="100%"
-                  height="300"
-                  loading="lazy"
-                  className="w-full"
-                ></iframe>
-              </div>
-            </motion.div>
+        <div className="flex items-center gap-5 group">
+          <div className="bg-blue-500/20 p-4 rounded-xl group-hover:bg-blue-500 transition">
+            <Phone className="text-blue-400 group-hover:text-white" />
           </div>
-        </motion.section>
+          <div>
+            <p className="text-black text-sm">Phone</p>
+            <p className="text-lg font-medium">+1 (800) 123-4567</p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-5 group">
+          <div className="bg-yellow-500/20 p-4 rounded-xl group-hover:bg-yellow-500 transition">
+            <Mail className="text-yellow-400 group-hover:text-white" />
+          </div>
+          <div>
+            <p className="text-black text-sm">Email</p>
+            <p className="text-lg font-medium">info@youroilcompany.com</p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-5 group">
+          <div className="bg-green-500/20 p-4 rounded-xl group-hover:bg-green-500 transition">
+            <MapPin className="text-green-400 group-hover:text-white" />
+          </div>
+          <div>
+            <p className="text-black text-sm">Location</p>
+            <p className="text-lg font-medium">Houston, Texas, USA</p>
+          </div>
+        </div>
+
+      </div>
+    </motion.div>
+
+
+    {/* FORM */}
+    <motion.div
+      variants={fadeUp}
+      className="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10 shadow-2xl"
+    >
+      <h3 className="text-3xl font-semibold mb-8">Send a Message</h3>
+
+      <form onSubmit={handleSubmit} className="space-y-6">
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Full Name"
+          value={form.name}
+          onChange={handleChange}
+          className="w-full p-4 text-black rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          value={form.email}
+          onChange={handleChange}
+          className="w-full p-4 rounded-xl text-black bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+
+        <input
+          type="text"
+          name="company"
+          placeholder="Company Name"
+          value={form.company}
+          onChange={handleChange}
+          className="w-full p-4 rounded-xl text-black bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows={5}
+          value={form.message}
+          onChange={handleChange}
+          className="w-full p-4 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+
+        <button
+          type="submit"
+          className="w-full bg-blue-500 hover:scale-[1.02] transition transform py-4 rounded-xl font-semibold shadow-lg"
+        >
+          Submit Inquiry
+        </button>
+
+      </form>
+    </motion.div>
+
+  </div>
+
+
+  {/* MAP BELOW */}
+  <motion.div
+    variants={fadeUp}
+    className="mt-20 rounded-3xl overflow-hidden border border-white/10 shadow-2xl"
+  >
+    <iframe
+      src="https://www.google.com/maps?q=Houston&output=embed"
+      width="100%"
+      height="400"
+      loading="lazy"
+      className="w-full"
+    ></iframe>
+  </motion.div>
+
+</motion.section>
       </div>
     </>
   );

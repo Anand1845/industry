@@ -55,20 +55,14 @@ const FeatureList = () => (
   </ul>
 );
 
-const stats = [
-  { label: "Plants", value: "10", icon: "🏭" },
-  { label: "Metric Tons Capacity", value: "110000+", icon: "📦" },
-  { label: "Team Strength", value: "4000+", icon: "👥" },
-];
-
 export default function ConstructionPage() {
   const services = [
-    { title: "PRE-CONSTRUCTION SERVICES", description: "We take our time on initial planning before any construction begins, to balance all the financial and efficiency issues beforehand.", icon: <Ruler className="w-6 h-6 text-white" />, bgColor: "bg-zinc-800" },
-    { title: "GENERAL CONTRACTING", description: "We have a long list of professional contractors, whom our engineers and architects enjoy working with on most of our projects!", icon: <Users className="w-6 h-6 text-white" />, bgColor: "bg-amber-500" },
-    { title: "CONSTRUCTION SERVICES", description: "Our customers love the pace and quality tempo that we show during each of the principal construction processes!", icon: <BrickWall className="w-6 h-6 text-white" />, bgColor: "bg-amber-500" },
-    { title: "CONSTRUCTION MANAGEMENT", description: "Construction project management is essential. We use the most time-efficient life cycle methods for that.", icon: <ClipboardList className="w-6 h-6 text-white" />, bgColor: "bg-amber-500" },
-    { title: "BUILDING INFORMATION MODELING (BIM)", description: "Oftentimes physical and functional essence of any construction project needs to be represented digitally in a 3D model format.", icon: <Home className="w-6 h-6 text-white" />, bgColor: "bg-amber-500" },
-    { title: "DESIGN-BUILD", description: "If a project is not too complex, we may hire a design-build contractor to make the construction timeline shorter.", icon: <PenTool className="w-6 h-6 text-white" />, bgColor: "bg-amber-500" },
+    { title: "Exploration Services", description: "We take our time on initial planning before any construction begins, to balance all the financial and efficiency issues beforehand.", icon: <Ruler className="w-6 h-6 text-white" />, bgColor: "bg-zinc-800" },
+    { title: "Drilling Services", description: "We have a long list of professional contractors, whom our engineers and architects enjoy working with on most of our projects!", icon: <Users className="w-6 h-6 text-white" />, bgColor: "bg-amber-500" },
+    { title: "Production Services", description: "Our customers love the pace and quality tempo that we show during each of the principal construction processes!", icon: <BrickWall className="w-6 h-6 text-white" />, bgColor: "bg-amber-500" },
+    { title: "Refining Services", description: "Construction project management is essential. We use the most time-efficient life cycle methods for that.", icon: <ClipboardList className="w-6 h-6 text-white" />, bgColor: "bg-amber-500" },
+    { title: "Transportation & Storage", description: "Oftentimes physical and functional essence of any construction project needs to be represented digitally in a 3D model format.", icon: <Home className="w-6 h-6 text-white" />, bgColor: "bg-amber-500" },
+    { title: "Distribution & Marketing", description: "If a project is not too complex, we may hire a design-build contractor to make the construction timeline shorter.", icon: <PenTool className="w-6 h-6 text-white" />, bgColor: "bg-amber-500" },
   ];
 
   return (
@@ -89,7 +83,7 @@ export default function ConstructionPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
             <header className="mb-8">
-              <h2 className="text-3xl font-bold">Our <span className="text-orange-500 underline underline-offset-8 decoration-2">Founder</span></h2>
+              <h2 className="text-3xl font-bold">About <span className="text-orange-500 underline underline-offset-8 decoration-2">Industry</span></h2>
             </header>
             <div className="flex gap-6 mb-6">
               <span className="text-7xl font-bold text-orange-500 leading-none">28</span>
@@ -104,33 +98,18 @@ export default function ConstructionPage() {
               <p className="italic">"Forging Excellence" – in terms of quality of products and relationship with stakeholders is the theme of the company.</p>
             </div>
             <hr className="my-10 border-gray-200" />
-            <div className="grid grid-cols-3 gap-4">
-              {stats.map((stat, index) => (
-                <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.2 }} className="flex flex-col">
-                  <div className="flex items-center gap-3">
-                    <span className="text-2xl text-orange-500">{stat.icon}</span>
-                    <span className="text-2xl md:text-3xl font-extrabold text-gray-900">{stat.value}</span>
-                  </div>
-                  <p className="text-xs md:text-sm text-gray-500 mt-1 uppercase tracking-wide">{stat.label}</p>
-                </motion.div>
-              ))}
-            </div>
           </motion.div>
 
           <motion.div className="relative group" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1 }}>
-            <div className="relative w-full h-160 overflow-hidden shadow-2xl">
-              <Image src="/pro.jpeg" alt="Vidyashanka" fill className="object-cover" />
-            </div>
-            <div className="bg-orange-400 text-white text-center py-3">
-              <p className="font-bold text-sm">Vidyashankar Krishnan</p>
-              <p className="text-xs uppercase tracking-widest">Chairman & Managing Director</p>
+            <div className="relative w-full h-130 overflow-hidden shadow-2xl">
+              <Image src="/c4.jpeg" alt="Vidyashanka" fill className="object-cover" />
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* SERVICES SECTION */}
-      <section className="py-20 px-6 max-w-7xl mx-auto">
+      <section className="py-12 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="w-12 h-1 bg-amber-500 mx-auto mb-4"></div>
           <h2 className="text-3xl font-bold text-zinc-800 uppercase tracking-tighter">Our Services</h2>

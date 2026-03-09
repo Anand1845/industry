@@ -11,17 +11,17 @@ interface Feature {
 const BusinessHero: React.FC = () => {
   const features: Feature[] = [
     {
-      title: "Responsive Layout",
+      title: "Engineering & Technical Services",
       icon: <Menu size={32} className="text-white" />,
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     {
-      title: "Creative Design",
+      title: "Petrochemical Services",
       icon: <Monitor size={32} className="text-white" />,
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     {
-      title: "Easy to Setup",
+      title: "Drilling Services",
       icon: <BookOpen size={32} className="text-white" />,
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     }

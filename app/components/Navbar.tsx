@@ -1,5 +1,6 @@
 import React from 'react';
 import { Search, ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
@@ -7,10 +8,11 @@ const Navbar = () => {
       {/* Logo Section */}
       <div className="flex items-center gap-2">
         <div className="flex flex-col border-white">
+          <Link href="/">
           <span className="text-2xl font-bold tracking-tighter leading-none italic">
             <span className="border-2 border-white rounded-full px-2 py-0.5 mr-1 not-italic">MAC</span>
             INSTRUMENTS
-          </span>
+          </span></Link>
           <span className="text-[8px] uppercase tracking-widest text-gray-400 mt-2">
             A Division of Machine Applications Corporation
           </span>

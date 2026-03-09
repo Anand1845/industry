@@ -52,9 +52,10 @@ const Footer = () => {
         <div>
           <h3 className="text-white text-lg font-semibold mb-5">Quick Links</h3>
           <ul className="space-y-3 text-sm">
-              <li className="hover:text-white hover:translate-x-1 cursor-pointer transition-all">
+            <li>
+              <Link href="/" className="hover:text-white hover:translate-x-1 cursor-pointer transition-all" >
                 Home
-              </li>             
+              </Link>   </li>          
               <Link href="/about" className="hover:text-white hover:translate-x-1 cursor-pointer transition-all">
                 About Us
               </Link>
