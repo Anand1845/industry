@@ -72,7 +72,7 @@ export default function ConstructionPage() {
         <div className="absolute inset-0 z-0 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/lp.jpeg')" }} />
         <motion.div className="relative z-10 max-w-4xl" initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
           <div className="w-16 h-1 bg-amber-500 mx-auto mb-6"></div>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-widest mb-4">INDUSTRIAL</h1>
+          <h1 className="text-5xl md:text-7xl font-bold tracking-widest mb-4">INDUSTRIAL PACKAGING</h1>
           <p className="text-lg md:text-xl font-light tracking-wide mb-8 uppercase">See how a 10-stories tower's being built,<br />in a time-lapse!</p>
           <motion.button whileHover={{ scale: 1.05 }} className="bg-amber-500 hover:bg-amber-600 transition-colors text-black font-bold py-3 px-8 text-xs uppercase tracking-widest">See our recent projects</motion.button>
         </motion.div>
@@ -181,11 +181,11 @@ export default function ConstructionPage() {
             <div className="absolute inset-0 bg-white/10 backdrop-blur-[1px]" />
           </div>
           <div className="relative z-10 max-w-6xl w-full bg-white/80 backdrop-blur-md p-8 md:p-12 shadow-sm border border-white/20">
-            <h1 className="text-2xl md:text-3xl font-normal text-slate-800 mb-8 border-b border-slate-200 pb-4">Sustainability and Corporate Social Responsibility - <span className="italic">The Journey of Hope</span></h1>
+            <h1 className="text-2xl md:text-3xl font-normal text-slate-800 mb-8 border-b border-slate-200 pb-4">Fully Automatic High-Speed Pouch Packing Machine - <span className="italic">The Expert Packaging</span></h1>
             <div className="space-y-6 text-slate-700 leading-relaxed text-base md:text-lg">
-              <p>The experience of joy of sharing is beyond description. Beyond work, many ABI Associates are actively associated with various formal and informal initiatives wherein they participate in community reach out.</p>
-              <p>As a company, we embrace our responsibility to leave a trail of happiness and sustainability in the communities in which we work and live. More than 50% of our campus is maintained green. One of the recent efforts is growing up <strong>Miyawaki forest</strong> adjacent to our plants. At a formal level, we run a Grammer school, <strong>Vidya Peetam</strong> to impart primary and secondary education to children.</p>
-              <p>Our Technical school, <strong>Matrix</strong>, is open to all youth in the neighbourhood. Here we impart the basics and nuances of modern manufacturing methods. In addition, we run a 32-bed hospital near our plants. As a matter of abundant care, we adhere to several non-mandatory policies.</p>
+              <p>Our Fully Automatic High-Speed Pouch Packing Machine is designed to deliver precision, speed, and reliability for modern packaging needs. It efficiently handles liquid, powder, and granule products while maintaining consistent sealing and accurate filling.</p>
+              <p>Built with advanced technology and durable components, this machine ensures smooth operation and minimal downtime. Its user-friendly controls and compact design make it ideal for industries such as food, pharmaceuticals, cosmetics, and chemicals.</p>
+              <p>With high production capacity and low maintenance requirements, the pouch packing machine helps businesses improve productivity and packaging quality. It is a perfect solution for manufacturers looking for efficient and cost-effective packaging automation.</p>
             </div>
           </div>
         </motion.section>

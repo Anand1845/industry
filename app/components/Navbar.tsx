@@ -1,6 +1,7 @@
 import React from 'react';
 import { Search, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -9,12 +10,16 @@ const Navbar = () => {
       <div className="flex items-center gap-2">
         <div className="flex flex-col border-white">
           <Link href="/">
-          <span className="text-2xl font-bold tracking-tighter leading-none italic">
-            <span className="border-2 border-white rounded-full px-2 py-0.5 mr-1 not-italic">MAC</span>
-            INSTRUMENTS
-          </span></Link>
+            <Image
+              src="/logo.jpeg"
+              alt="MAC Instruments Logo"
+              width={70}
+              height={20}
+              className="object-contain ml-16"
+            />
+          </Link>
           <span className="text-[8px] uppercase tracking-widest text-gray-400 mt-2">
-            A Division of Machine Applications Corporation
+            Manufacturer Of Pouch Packing Machines
           </span>
         </div>
       </div>
@@ -46,7 +51,7 @@ const Navbar = () => {
     href="#"
     className="relative overflow-hidden px-3 py-2 group"
   >
-    <span className="relative z-10">Case Studies</span>
+    <span className="relative z-10">Brosher</span>
     <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
   </a>
   

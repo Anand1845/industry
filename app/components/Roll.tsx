@@ -63,7 +63,7 @@ export default function SolutionsSection() {
       className="relative w-full bg-white py-24 overflow-hidden"
     >
       {/* MAIN CONTAINER WITH LEFT & RIGHT PADDING */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row  gap-16 px-6 md:px-12 lg:px-20">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16  md:px-12 lg:px-5">
 
         {/* LEFT CONTENT */}
         <motion.div
@@ -74,16 +74,16 @@ export default function SolutionsSection() {
             variants={fadeUp}
             className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6"
           >
-            Solutions for <br /> Your Business
+            Solutions for <br /> Your Packing
           </motion.h2>
 
           <motion.p
             variants={fadeUp}
             className="text-gray-600 text-lg mb-8"
           >
-            As a global leader in engineering solutions, CG empowers customers
-            to harness power efficiently and enhance industrial productivity
-            with sustainability.
+            Precision Packing. Powerful Performance.
+            Engineered for speed, accuracy, and reliability in every pouch.<br/>
+            Pack Faster. Pack Better.
           </motion.p>
 
           {/* Buttons */}
@@ -116,7 +116,7 @@ export default function SolutionsSection() {
             initial={{ x: 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
-            className="absolute right-[-20%] top-0 w-[125%] h-full bg-blue-700 rounded-tl-[120px]"
+            className="absolute right-[-10%] top-0 w-[115%] h-full bg-blue-700 rounded-tl-[120px]"
           />
 
           {/* Slider */}

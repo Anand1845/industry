@@ -118,7 +118,7 @@ export default function ContactPage() {
           </div>
           <div>
             <p className="text-black text-sm">Phone</p>
-            <p className="text-lg font-medium">+1 (800) 123-4567</p>
+            <p className="text-lg font-medium">+91 9766138282</p>
           </div>
         </div>
 
@@ -128,7 +128,7 @@ export default function ContactPage() {
           </div>
           <div>
             <p className="text-black text-sm">Email</p>
-            <p className="text-lg font-medium">info@youroilcompany.com</p>
+            <p className="text-lg font-medium">conchpackaging@gmail.com</p>
           </div>
         </div>
 
@@ -138,7 +138,7 @@ export default function ContactPage() {
           </div>
           <div>
             <p className="text-black text-sm">Location</p>
-            <p className="text-lg font-medium">Houston, Texas, USA</p>
+            <p className="text-lg font-medium"> S.N.232/1,Sharma Building Pune-Nashik Road, Opp Bank Of Baroda,Bhosari,Pune 411039.</p>
           </div>
         </div>
 
@@ -213,7 +213,7 @@ export default function ContactPage() {
     className="mt-20 rounded-3xl overflow-hidden border border-white/10 shadow-2xl"
   >
     <iframe
-      src="https://www.google.com/maps?q=Houston&output=embed"
+     src="https://maps.google.com/maps?q=S.N.232/1,Sharma%20Building,Pune-Nashik%20Road,Opp%20Bank%20Of%20Baroda,Bhosari,Pune%20411039&output=embed"
       width="100%"
       height="400"
       loading="lazy"

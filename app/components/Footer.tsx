@@ -16,9 +16,9 @@ const Footer = () => {
         
         {/* Company Bio */}
         <div className="space-y-5">
-          <h2 className="text-white text-2xl font-bold tracking-tight">XYZ INDUSTRY</h2>
+          <h2 className="text-white text-2xl font-bold tracking-tight">Conch Industrial Solution PVT. LTD</h2>
           <p className="text-sm leading-relaxed max-w-xs">
-            Delivering industrial-grade flooring, waterproofing & coating solutions with excellence, durability, and nationwide reach.
+            Manufacturer of pouch packing machines.
           </p>
           <div className="flex gap-3 pt-2">
             <a href="#" className="p-2 bg-linear-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white rounded-md hover:scale-105 transition-transform">
@@ -78,22 +78,21 @@ const Footer = () => {
             <li className="flex items-start gap-3">
               <MapPin size={20} className="text-[#ec4899] shrink-0" />
               <span className="leading-snug">
-                Flat No.308, C3 Building, Purvarang Society, Gat No.571, Kesnand, Pune-412207, Maharashtra, India
-              </span>
+                 S.N.232/1,Sharma Building Pune-Nashik Road, Opp Bank Of Baroda,Bhosari,Pune 411039.</span>
             </li>
             <li className="flex items-center gap-3">
               <Phone size={18} className="text-[#ec4899] shrink-0" />
-              <span>+91 73835 70508</span>
+              <span>+91 9766138282</span>
             </li>
             <li className="flex items-center gap-3">
               <Phone size={18} className="text-[#ec4899] shrink-0" />
-              <span>+91 97660 69372</span>
+              <span>+91 9766138282</span>
             </li>
             <li className="flex items-center gap-3">
               <div className="bg-[#1d4ed8] p-1.5 rounded-sm">
                 <Mail size={14} className="text-white" strokeWidth={3} />
               </div>
-              <span className="hover:text-white transition-colors cursor-pointer">info@xyzcompany.com</span>
+              <span className="hover:text-white transition-colors cursor-pointer">kanhaiyalalpragat@gmail.com <br/>conchpackaging@gmail.com</span>
             </li>
           </ul>
         </div>

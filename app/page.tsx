@@ -64,9 +64,9 @@ export default function Home() {
               The Standard For
             </h2>
 
-            <h1 className="text-white text-5xl md:text-7xl font-medium leading-tight mb-12">
-              High Temperature <br />
-              Humidity Measurement
+            <h1 className="text-white text-5xl md:text-6xl font-medium leading-tight mb-12">
+              Manufacturer Of  <br />
+              Pouch Packing Machines
             </h1>
 
             <div className="flex flex-wrap gap-6">
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* INDUSTRY OVERVIEW */}
-      <section className="p-8">
+      {/* <section className="p-8">
         <motion.h1
           initial="hidden"
           whileInView="show"
@@ -136,11 +136,11 @@ export default function Home() {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* SUB BUSINESSES */}
        <div className="w-full bg-white py-12">
-  <div className="max-w-7xl mx-auto px-16">
+  <div className="max-w-7xl mx-auto ">
     
     <div className="flex items-start justify-between w-full group cursor-pointer">
       
@@ -148,13 +148,13 @@ export default function Home() {
       <div className="flex flex-col space-y-2">
         <h2 className="text-6xl md:text-7xl font-bold tracking-tight text-[#4b5563]">
           <span className="bg-[#0056b3] text-white px-5 py-2 rounded-r-2xl rounded-l-md mr-3">
-            8+ Decades
+            Industrial Package
           </span>
-          of Trust
+          Pouch Filling,
         </h2>
 
         <h2 className="text-6xl md:text-7xl font-bold tracking-tight text-[#4b5563]">
-          and Excellence
+           Sealing & Packing Machine
         </h2>
       </div>
 
