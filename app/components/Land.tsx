@@ -132,7 +132,7 @@ export default function IndustrialServices() {
         >
           <div className="flex justify-between items-center mb-10">
             <h2 className="text-3xl font-bold border-l-4 border-[#E87B1E] pl-4 uppercase tracking-wider">
-              XYZ Campaigns
+              Conch Industrial Solution PVT. LTD
             </h2>
 
             <motion.button

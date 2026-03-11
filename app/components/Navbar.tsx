@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between px-8 py-4 bg-black text-white">
+    <nav className="sticky top-0 z-50 flex items-center justify-between px-8 py-4 bg-transparent text-black">
       {/* Logo Section */}
       <div className="flex items-center gap-2">
         <div className="flex flex-col border-white">
@@ -18,9 +18,6 @@ const Navbar = () => {
               className="object-contain ml-16"
             />
           </Link>
-          <span className="text-[8px] uppercase tracking-widest text-gray-400 mt-2">
-            Manufacturer Of Pouch Packing Machines
-          </span>
         </div>
       </div>
 
@@ -34,7 +31,7 @@ const Navbar = () => {
     <span className="relative z-10 flex items-center gap-1">
       About US <ChevronDown size={14} />
     </span>
-    <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
+    <span className="absolute bottom-0 left-0 w-full h-0 bg-[#db0f0fd0] transition-all duration-300 group-hover:h-full"></span>
   </a>
 
   <a
@@ -44,7 +41,7 @@ const Navbar = () => {
     <span className="relative z-10 flex items-center gap-1">
       Products <ChevronDown size={14} />
     </span>
-    <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
+    <span className="absolute bottom-0 left-0 w-full h-0 bg-[#db0f0fd0] transition-all duration-300 group-hover:h-full"></span>
   </a>
 
   <a
@@ -52,7 +49,7 @@ const Navbar = () => {
     className="relative overflow-hidden px-3 py-2 group"
   >
     <span className="relative z-10">Brosher</span>
-    <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
+    <span className="absolute bottom-0 left-0 w-full h-0 bg-[#db0f0fd0] transition-all duration-300 group-hover:h-full"></span>
   </a>
   
   <a
@@ -62,7 +59,7 @@ const Navbar = () => {
     <span className="relative z-10 flex items-center gap-1">
       Contact Us <ChevronDown size={14} />
     </span>
-    <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-500 transition-all duration-300 group-hover:h-full"></span>
+    <span className="absolute bottom-0 left-0 w-full h-0 bg-[#db0f0fd0] transition-all duration-300 group-hover:h-full"></span>
   </a>
 
 
@@ -70,7 +67,7 @@ const Navbar = () => {
 
       {/* Action Buttons */}
       <div className="flex items-center gap-6">
-        <button className="bg-[#1D84D1] hover:bg-blue-600 text-white px-6 py-3 text-sm font-bold uppercase transition">
+        <button className="bg-[#db0f0fd0] hover:bg-blue-600 text-white px-6 py-3 text-sm font-bold uppercase transition">
           Request Quote
         </button>
         <Search className="cursor-pointer hover:text-blue-400" size={20} />

@@ -177,7 +177,7 @@ export default function ConstructionPage() {
          <Ourj/>
         {/* SUSTAINABILITY SECTION */}
         <motion.section className="relative min-h-125 w-full flex items-center justify-center py-10 px-4 sm:px-8" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1 }}>
-          <div className="absolute inset-0 z-0 bg-cover bg-center" style={{ backgroundImage: "url('/lp4.jpeg')" }}>
+          <div className="absolute inset-0 z-0 bg-cover bg-center" style={{ backgroundImage: "url('/about.jpeg')" }}>
             <div className="absolute inset-0 bg-white/10 backdrop-blur-[1px]" />
           </div>
           <div className="relative z-10 max-w-6xl w-full bg-white/80 backdrop-blur-md p-8 md:p-12 shadow-sm border border-white/20">

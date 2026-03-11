@@ -1,173 +1,119 @@
 import React from "react";
-import { Leaf, BarChart3, Globe, ArrowUpRight } from "lucide-react";
-import { motion, Variants } from "framer-motion";
+import { ArrowUpRight, Leaf, BarChart3, Settings2 } from "lucide-react";
+import { motion } from "framer-motion";
 
-const container: Variants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.25,
-    },
-  },
-};
-
-const item: Variants = {
-  hidden: { opacity: 0, y: 40 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.7 },
-  },
-};
-
-const floatLeaf: Variants = {
-  animate: {
-    y: [0, -12, 0],
-    rotate: [-10, 10, -10],
-    transition: {
-      duration: 6,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-const SustainabilityBanner: React.FC = () => {
+const SustainabilitySection: React.FC = () => {
   return (
-    <motion.section
-      variants={container}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-      className="w-full bg-[#e8f5e9] py-8 px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center gap-12 overflow-hidden relative"
-    >
-      {/* Background Pattern */}
-      <div
-        className="absolute inset-0 opacity-10 pointer-events-none"
-        style={{
-          backgroundImage: "radial-gradient(#2e7d32 1px, transparent 1px)",
-          backgroundSize: "20px 20px",
-        }}
-      />
+    <section className="bg-[#e8f5e9] py-16 px-4 md:px-12 font-sans overflow-hidden">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
 
-      {/* Left Illustration */}
-      <motion.div
-        variants={item}
-        className="relative w-full md:w-1/2 flex justify-center"
-      >
-        <div className="relative w-72 h-72 md:w-96 md:h-96">
-          {/* Rotating Ring */}
-          <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-            className="absolute inset-4 border-8 border-[#2e7d32] rounded-full border-t-transparent"
-          />
-
-          {/* Pulse Ring */}
-          <div className="absolute inset-0 border-12 border-[#4caf50] rounded-full opacity-20 animate-pulse" />
-
-          {/* Globe */}
-          <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
-            className="absolute inset-0 flex items-center justify-center"
-          >
-            <Globe
-              size={240}
-              className="text-[#4caf50] opacity-90"
-              strokeWidth={1}
-            />
-          </motion.div>
-
-          {/* Floating Leaf 1 */}
-          <motion.div
-            variants={floatLeaf}
-            animate="animate"
-            className="absolute -top-4 left-10"
-          >
-            <Leaf size={48} className="text-[#2e7d32]" fill="#2e7d32" />
-          </motion.div>
-
-          {/* Floating Leaf 2 */}
-          <motion.div
-            variants={floatLeaf}
-            animate="animate"
-            className="absolute top-12 -left-6"
-          >
-            <Leaf size={64} className="text-[#81c784]" fill="#81c784" />
-          </motion.div>
-        </div>
-      </motion.div>
-
-      {/* Right Content */}
-      <motion.div variants={item} className="w-full md:w-1/2 relative z-10">
-        <motion.h1
-          variants={item}
-          className="text-4xl md:text-5xl font-bold text-[#455a64] mb-6"
-        >
-          Engineering a Greener Future
-        </motion.h1>
-
-        <motion.p
-          variants={item}
-          className="text-[#546e7a] text-lg leading-relaxed mb-10 max-w-xl"
-        >
-          At CG, sustainability drives every step, from design to delivery. We
-          focus on efficient, safe, and circular solutions that reduce
-          environmental impact and support a greener future.
-        </motion.p>
-
-        {/* Cards */}
+        {/* Left Illustration */}
         <motion.div
-          variants={container}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="relative w-full lg:w-1/2 flex justify-center"
         >
-          {/* Card 1 */}
-          <motion.div
-            variants={item}
-            whileHover={{ scale: 1.05, y: -5 }}
-            className="group border-2 border-[#a5d6a7] rounded-3xl p-8 flex flex-col items-center text-center bg-white/30 backdrop-blur-sm hover:bg-white/50 transition-all cursor-pointer"
-          >
-            <div className="mb-4 p-3 rounded-full border-2 border-[#4caf50]">
-              <Leaf className="text-[#2e7d32]" size={32} />
-            </div>
+          <div className="relative w-72 h-72 md:w-96 md:h-96 border-4 border-[#4CAF50] rounded-full flex items-center justify-center p-8">
 
-            <h3 className="text-[#2e7d32] font-bold mb-4">
-              CG's Approach to Sustainability
-            </h3>
+            {/* Rotating Machine */}
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+              className="text-[#4CAF50] flex flex-col items-center"
+            >
+              <Settings2 size={120} strokeWidth={1} />
+              <div className="mt-2 h-20 w-16 border-2 border-[#4CAF50] rounded-sm relative">
+                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-20 h-1 bg-[#4CAF50]"></div>
+              </div>
+            </motion.div>
 
-            <div className="flex items-center text-[#2e7d32] font-semibold text-sm">
-              Know more <ArrowUpRight size={16} className="ml-1" />
-            </div>
-          </motion.div>
+            {/* Floating Leaf 1 */}
+            <motion.div
+              animate={{ y: [0, -10, 0] }}
+              transition={{ repeat: Infinity, duration: 4 }}
+              className="absolute -top-4 left-10"
+            >
+              <Leaf className="text-[#4CAF50] fill-[#4CAF50] rotate-[-15deg]" size={32} />
+            </motion.div>
 
-          {/* Card 2 */}
-          <motion.div
-            variants={item}
-            whileHover={{ scale: 1.05, y: -5 }}
-            className="group border-2 border-[#a5d6a7] rounded-3xl p-8 flex flex-col items-center text-center bg-white/30 backdrop-blur-sm hover:bg-white/50 transition-all cursor-pointer"
-          >
-            <div className="mb-4">
-              <BarChart3
-                className="text-[#2e7d32]"
-                size={48}
-                strokeWidth={1.5}
-              />
-            </div>
+            {/* Floating Leaf 2 */}
+            <motion.div
+              animate={{ y: [0, -8, 0] }}
+              transition={{ repeat: Infinity, duration: 5 }}
+              className="absolute top-10 -left-2"
+            >
+              <Leaf className="text-[#4CAF50] fill-[#4CAF50] -rotate-45" size={24} />
+            </motion.div>
 
-            <h3 className="text-[#2e7d32] font-bold mb-4">
-              Reports and Certifications
-            </h3>
-
-            <div className="flex items-center text-[#2e7d32] font-semibold text-sm">
-              Know more <ArrowUpRight size={16} className="ml-1" />
-            </div>
-          </motion.div>
+            {/* Decorative Ring */}
+            <div className="absolute -inset-3.5 border-r-4 border-b-4 border-transparent border-r-[#2e7d32] border-b-[#2e7d32] rounded-full opacity-40"></div>
+          </div>
         </motion.div>
-      </motion.div>
-    </motion.section>
+
+        {/* Right Content */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="w-full lg:w-1/2 space-y-6"
+        >
+          <h2 className="text-4xl font-bold text-[#2d4a3e] leading-tight">
+            Manufacturing Sustainable Pouch Solutions
+          </h2>
+
+          <p className="text-[#4f6a5f] text-lg leading-relaxed max-w-xl">
+            At CG Packaging Systems, we're redefining efficiency. Our pouch packing
+            machines are designed with material-saving features, energy-efficient
+            components, and support for sustainable packaging materials.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-6 pt-4">
+
+            {/* Card 1 */}
+            <motion.div
+              whileHover={{ y: -8, scale: 1.03 }}
+              className="bg-[#f1f8f3] border border-[#c8e6c9] rounded-3xl p-8 flex-1 flex flex-col items-center text-center cursor-pointer shadow-sm"
+            >
+              <div className="bg-white p-3 rounded-full mb-4 shadow-sm">
+                <Leaf className="text-[#2e7d32]" size={28} />
+              </div>
+
+              <h3 className="font-bold text-[#2d4a3e] mb-4">
+                Sustainable Material Innovations
+              </h3>
+
+              <button className="mt-auto flex items-center text-sm font-semibold text-[#2e7d32] hover:underline">
+                Know more <ArrowUpRight size={16} className="ml-1" />
+              </button>
+            </motion.div>
+
+            {/* Card 2 */}
+            <motion.div
+              whileHover={{ y: -8, scale: 1.03 }}
+              className="bg-[#f1f8f3] border border-[#c8e6c9] rounded-3xl p-8 flex-1 flex flex-col items-center text-center cursor-pointer shadow-sm"
+            >
+              <div className="bg-white p-3 rounded-full mb-4 shadow-sm">
+                <BarChart3 className="text-[#2e7d32]" size={28} />
+              </div>
+
+              <h3 className="font-bold text-[#2d4a3e] mb-4">
+                Performance & Efficiency Metrics
+              </h3>
+
+              <button className="mt-auto flex items-center text-sm font-semibold text-[#2e7d32] hover:underline">
+                Know more <ArrowUpRight size={16} className="ml-1" />
+              </button>
+            </motion.div>
+
+          </div>
+        </motion.div>
+
+      </div>
+    </section>
   );
 };
 
-export default SustainabilityBanner;
+export default SustainabilitySection;

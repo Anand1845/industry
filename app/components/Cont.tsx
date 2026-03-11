@@ -57,12 +57,10 @@ const BusinessHero: React.FC = () => {
 
         <div className="relative z-10 max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            XYZ OIL INDUSTRY
+           Conch Industrial Solution PVT. LTD
           </h1>
           <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            Built with advanced technology and durable components, this machine ensures smooth operation and minimal downtime. Its user-friendly controls and compact design make it ideal for industries such as food, pharmaceuticals, cosmetics, and chemicals.
           </p>
         </div>
       </motion.section>

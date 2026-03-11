@@ -129,9 +129,9 @@ export default function CompanyHistory() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="relative w-full aspect-square max-w-[450px]"
+              className="relative w-full aspect-square max-w-112.5"
             >
-              <div className="w-full h-full rounded-[40px] overflow-hidden shadow-2xl border-[12px] border-white">
+              <div className="w-full h-full rounded-[40px] overflow-hidden shadow-2xl border-12 border-white">
                 <img 
                   src={current.image} 
                   alt={current.title}
@@ -196,7 +196,7 @@ export default function CompanyHistory() {
                 {isActive && (
                   <motion.div 
                     layoutId="vertical-line"
-                    className="absolute bottom-full mb-4 w-[2px] h-20 bg-blue-500"
+                    className="absolute bottom-full mb-4 w-0.5 h-20 bg-blue-500"
                   />
                 )}
                 

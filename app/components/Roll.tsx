@@ -116,7 +116,7 @@ export default function SolutionsSection() {
             initial={{ x: 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
-            className="absolute right-[-10%] top-0 w-[115%] h-full bg-blue-700 rounded-tl-[120px]"
+            className="absolute right-[-10%] top-0 w-[115%] h-full bg-white rounded-tl-[120px]"
           />
 
           {/* Slider */}

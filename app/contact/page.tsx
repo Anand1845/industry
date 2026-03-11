@@ -53,7 +53,6 @@ export default function ContactPage() {
     <>
       <Cont />
 
-
       <div className="min-h-screen bg-white text-black">
         {/* HERO */}
         <motion.section

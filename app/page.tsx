@@ -1,11 +1,11 @@
 "use client";
 
 import { ArrowRight, FileText, Star, ChevronLeft, ChevronRight, Scroll, ArrowUpRight } from "lucide-react";
-import Image from "next/image";
 import Land from "./components/Land";
 import { motion } from "framer-motion";
 import Roll from "./components/Roll";
 import New from "./components/New";
+import Landsec from "./components/Landsec";
 
 export default function Home() {
   const industryData = [
@@ -39,7 +39,6 @@ export default function Home() {
 
   return (
     <main>
-
       {/* HERO SECTION */}
       <section className="relative min-h-screen flex items-center bg-gray-900 overflow-hidden">
 
@@ -48,10 +47,10 @@ export default function Home() {
           animate={{ scale: 1.1 }}
           transition={{ duration: 20, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
           className="absolute inset-0 z-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: "url('/ind.jpeg')" }}
+          style={{ backgroundImage: "url('/land.jpeg')" }}
         />
 
-        <div className="absolute inset-0 bg-linear-to-r from-black/80 to-transparent z-0" />
+        <div className="absolute inset-0 bg-linear-to-b from-white/30 via-black/20 to-black/80 z-0"></div>
 
         <motion.div
           initial="hidden"
@@ -72,18 +71,18 @@ export default function Home() {
             <div className="flex flex-wrap gap-6">
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="bg-[#1D84D1] hover:bg-blue-600 text-white px-10 py-5 text-lg font-medium transition min-w-50"
+                className="bg-[#db0f0fd0] hover:bg-blue-600 text-white px-10 py-5 text-lg font-medium transition min-w-50"
               >
                 Learn More
               </motion.button>
 
-              <motion.button
+              {/* <motion.button
                 whileHover={{ scale: 1.05 }}
                 className="flex items-center justify-between border-2 border-[#1D84D1] bg-[#1D84D1]/10 hover:bg-[#1D84D1]/30 text-white px-8 py-5 text-lg font-medium transition min-w-60"
               >
                 Moisture Handbook
                 <FileText className="ml-4" size={24} />
-              </motion.button>
+              </motion.button> */}
             </div>
           </div>
         </motion.div>
@@ -137,7 +136,7 @@ export default function Home() {
           ))}
         </div>
       </section> */}
-
+       <Landsec/>
       {/* SUB BUSINESSES */}
        <div className="w-full bg-white py-12">
   <div className="max-w-7xl mx-auto ">
@@ -147,7 +146,7 @@ export default function Home() {
       {/* Text */}
       <div className="flex flex-col space-y-2">
         <h2 className="text-6xl md:text-7xl font-bold tracking-tight text-[#4b5563]">
-          <span className="bg-[#0056b3] text-white px-5 py-2 rounded-r-2xl rounded-l-md mr-3">
+          <span className="bg-[#db0f0fd0] text-white px-5 py-2 rounded-r-2xl rounded-l-md mr-3">
             Industrial Package
           </span>
           Pouch Filling,
@@ -161,7 +160,7 @@ export default function Home() {
       {/* Arrow */}
       <div className="flex items-start">
         <ArrowUpRight
-          className="w-20 h-20 text-[#0056b3] transition-transform duration-300 group-hover:translate-x-2 group-hover:-translate-y-2"
+          className="w-20 h-20 text-[#db0f0fd0] transition-transform duration-300 group-hover:translate-x-2 group-hover:-translate-y-2"
           strokeWidth={3}
         />
       </div>
@@ -181,14 +180,14 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto px-6 text-center"
+          className="max-w-4xl mx-auto px-6 text-center" 
         >
           <h2 className="text-4xl font-bold mb-6">
-            Ready to Go for Oil ?
+            Ready to Go for Packaging ?
           </h2>
 
           <p className="text-slate-500 mb-8">
-            Partner with VoltRide and be part of India’s clean mobility revolution.
+            Partner with VoltRide and be part of India’s clean packaging revolution.
           </p>
 
           <motion.button
