@@ -73,7 +73,7 @@ export default function ConstructionPage() {
         <motion.div className="relative z-10 max-w-4xl" initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
           <div className="w-16 h-1 bg-amber-500 mx-auto mb-6"></div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-widest mb-4">INDUSTRIAL PACKAGING</h1>
-          <p className="text-lg md:text-xl font-light tracking-wide mb-8 uppercase">See how a 10-stories tower's being built,<br />in a time-lapse!</p>
+          {/* <p className="text-lg md:text-xl font-light tracking-wide mb-8 uppercase">See how a 10-stories tower's being built,<br />in a time-lapse!</p> */}
           <motion.button whileHover={{ scale: 1.05 }} className="bg-amber-500 hover:bg-amber-600 transition-colors text-black font-bold py-3 px-8 text-xs uppercase tracking-widest">See our recent projects</motion.button>
         </motion.div>
       </section>
@@ -83,7 +83,7 @@ export default function ConstructionPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
             <header className="mb-8">
-              <h2 className="text-3xl font-bold">About <span className="text-orange-500 underline underline-offset-8 decoration-2">Industry</span></h2>
+              <h2 className="text-3xl font-bold">Our <span className="text-orange-500 underline underline-offset-8 decoration-2">Vision</span></h2>
             </header>
             <div className="flex gap-6 mb-6">
               <span className="text-7xl font-bold text-orange-500 leading-none">28</span>
@@ -92,16 +92,21 @@ export default function ConstructionPage() {
               </div>
             </div>
             <div className="space-y-4 text-gray-600 leading-relaxed text-sm md:text-base">
-              <p>Founded on the tradition and philosophy of steadfast commitment to achieving <strong>"Total Customer Satisfaction"</strong> through excellent quality, on time deliveries and competitive pricing.</p>
-              <p>The Company has grown steadily in strength and stature to attain its present recognition of being one of the largest exporters of forgings in India in its product range and has created a niche in the global market.</p>
-              <p>With its presence pan India and near to the customers, MMF is placing itself as a one stop shop for the closed die forgings needs of both domestic and international customers.</p>
-              <p className="italic">"Forging Excellence" – in terms of quality of products and relationship with stakeholders is the theme of the company.</p>
+              <p>
+                  Conch Industrial Solution Pvt. Ltd. is a growing and innovative company dedicated to providing high-quality industrial machinery and packaging solutions. Established on 6 January 2022, the company has quickly built a reputation for delivering reliable, efficient, and technologically advanced equipment for various industries.
+
+                  The company is founded and led by Mr. Kanhaiyalal Anandrao Pragat, whose vision and commitment to quality have played a key role in shaping the organization. Under his leadership, Conch Industrial Solution Pvt. Ltd. focuses on delivering products that enhance productivity, accuracy, and operational efficiency for businesses.
+
+                  The company offers a wide range of industrial filling and packaging machines designed to meet the diverse needs of manufacturing and processing industries. At Conch Industrial Solution Pvt. Ltd., the focus is on innovation, quality, and customer satisfaction. The company continuously works to provide efficient automation solutions that help businesses streamline their production processes and achieve better results.
+
+                  With a commitment to excellence and continuous improvement, Conch Industrial Solution Pvt. Ltd. aims to become a trusted partner for industries looking for reliable machinery and advanced packaging solutions.</p>
+              
             </div>
             <hr className="my-10 border-gray-200" />
           </motion.div>
 
           <motion.div className="relative group" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1 }}>
-            <div className="relative w-full h-130 overflow-hidden shadow-2xl">
+            <div className="relative w-full mt-14 h-140 overflow-hidden shadow-2xl">
               <Image src="/c4.jpeg" alt="Vidyashanka" fill className="object-cover" />
             </div>
           </motion.div>

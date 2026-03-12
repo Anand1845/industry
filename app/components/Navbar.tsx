@@ -1,11 +1,10 @@
-import React from 'react';
 import { Search, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between px-8 py-4 bg-transparent text-black">
+    <nav className="sticky top-0 z-50 flex items-center justify-between px-8 py-4 text-white bg-black/40">
       {/* Logo Section */}
       <div className="flex items-center gap-2">
         <div className="flex flex-col border-white">
@@ -35,7 +34,7 @@ const Navbar = () => {
   </a>
 
   <a
-    href="#"
+    href="/product"
     className="relative overflow-hidden px-3 py-2 group flex items-center gap-1"
   >
     <span className="relative z-10 flex items-center gap-1">

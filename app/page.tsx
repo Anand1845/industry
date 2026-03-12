@@ -50,7 +50,7 @@ export default function Home() {
           style={{ backgroundImage: "url('/land.jpeg')" }}
         />
 
-        <div className="absolute inset-0 bg-linear-to-b from-white/30 via-black/20 to-black/80 z-0"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-black/50 via-black/40 to-white z-0"></div>
 
         <motion.div
           initial="hidden"
@@ -146,7 +146,7 @@ export default function Home() {
       {/* Text */}
       <div className="flex flex-col space-y-2">
         <h2 className="text-6xl md:text-7xl font-bold tracking-tight text-[#4b5563]">
-          <span className="bg-[#db0f0fd0] text-white px-5 py-2 rounded-r-2xl rounded-l-md mr-3">
+          <span className="text-[#4b5563]  py-2 rounded-r-2xl rounded-l-md mr-3">
             Industrial Package
           </span>
           Pouch Filling,

@@ -7,7 +7,7 @@ const PackagingLanding = () => {
       {/* Header Section */}
       <header className="mb-16">
         <h1 className="text-4xl md:text-5xl font-extrabold text-[#1a202c] leading-tight max-w-4xl">
-          One of the Leading Corrugated Box Manufacturers & Suppliers in Mumbai, India
+          Our Mission
         </h1>
       </header>
 
@@ -22,15 +22,9 @@ const PackagingLanding = () => {
           </p>
           
           <div className="text-gray-500 leading-relaxed space-y-4">
-            <p>
-              We are Established in 2018, One Stop Solution for Corrugated Packaging 
-              Boxes and now proudly became one of the Best Corrugated Box Manufacturers 
-              and Suppliers in Mumbai, India. Based in Bhiwandi, Maharashtra, India.
-            </p>
-            <p>
-              Primarily serving Mumbai, Navi Mumbai, Thane Areas. We specialized in 
-              manufacturing <span className="font-semibold text-gray-700">3 Ply, 5 Ply, 7 Ply & 9 Ply Corrugated Boxes</span> 
-              with premium export quality at an affordable price.
+            <p> 
+              At Conch Industrial Solution Pvt. Ltd., our mission is to provide high-quality and reliable industrial machinery that helps businesses improve efficiency and productivity. We aim to deliver advanced filling and packaging solutions that meet the growing needs of modern industries.
+              We are committed to maintaining the highest standards of quality, innovation, and customer satisfaction. By continuously improving our technology and services, we strive to support our clients with durable, efficient, and cost-effective machinery that simplifies their production processes and helps them achieve long-term success.
             </p>
           </div>
         </div>
@@ -39,7 +33,7 @@ const PackagingLanding = () => {
         <div className="lg:col-span-4 flex justify-center relative">
             <div className="absolute -bottom-6 -left-6 w-40 h-48 bg-[#ff6b35] z-0 hidden md:block" />
 
-            <div className="relative z-10 w-full aspect-square overflow-hidden shadow-xl">
+            <div className="relative z-10 w-full aspect-square overflow-hidden shadow-xl mt-8">
                 <img 
                 src="/box.jpeg"
                 alt="Stacked Corrugated Boxes"
@@ -53,15 +47,15 @@ const PackagingLanding = () => {
         <div className="lg:col-span-4 space-y-12">
           <FeatureItem 
             title="Quality"
-            description="We maintain our quality at peak, no compromise in quality at all."
+            description="Maintained through strict quality control measures to ensure the product meets high standards of performance, safety, and reliability."
           />
           <FeatureItem 
             title="Reliability"
-            description="KANI Packaging is the other name of reliability. You can completely rely on us."
+            description="Ensures consistent production standards and dependable product performance through controlled and precise manufacturing processes."
           />
           <FeatureItem 
             title="Durability"
-            description="Our Products are highly durable, one of the USP which makes us different from others."
+            description="Built with strong materials and robust design to withstand regular use and maintain performance over time."
           />
         </div>
 
