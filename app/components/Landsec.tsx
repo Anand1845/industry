@@ -7,7 +7,8 @@ const PackagingLanding = () => {
       {/* Header Section */}
       <header className="mb-16">
         <h1 className="text-4xl md:text-5xl font-extrabold text-[#1a202c] leading-tight max-w-4xl">
-          Our Mission
+         Dedication to providing high quality industrial machinery 
+          & Packaging solutions
         </h1>
       </header>
 
@@ -31,11 +32,11 @@ const PackagingLanding = () => {
 
         {/* Center Image Column with Orange Accent */}
         <div className="lg:col-span-4 flex justify-center relative">
-            <div className="absolute -bottom-6 -left-6 w-40 h-48 bg-[#ff6b35] z-0 hidden md:block" />
+            <div className="absolute -bottom-6 -left-6 w-40 h-48 bg-[#b8312e] z-0 hidden md:block" />
 
             <div className="relative z-10 w-full aspect-square overflow-hidden shadow-xl mt-8">
                 <img 
-                src="/box.jpeg"
+                src="/od.jpeg"
                 alt="Stacked Corrugated Boxes"
                 className="w-full h-full object-cover"
                 />
@@ -68,7 +69,7 @@ const PackagingLanding = () => {
 const FeatureItem = ({ title, description }: { title: string; description: string }) => (
   <div className="space-y-3">
     <div className="flex items-center gap-3">
-      <span className="w-2.5 h-2.5 bg-[#ff6b35] rounded-full" />
+      <span className="w-2.5 h-2.5 bg-[#b8312e] rounded-full" />
       <h3 className="text-xl font-bold text-black">{title}</h3>
     </div>
     <p className="text-gray-400 font-medium leading-relaxed pl-6">

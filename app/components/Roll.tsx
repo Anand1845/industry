@@ -5,31 +5,48 @@ import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 
 const cards = [
   {
-    title: "Drives & Automation",
+    title: "Polestar Mechanical",
     description:
-      "Empowering intelligent motion with advanced automation solutions.",
+      "Industrial mechanical systems used for automated processing and material handling in production lines.",
     image: "/lp1.jpeg",
-    icon: "⚙️",
+    
   },
   {
-    title: "Railways",
-    description: "Advanced railway solutions powering India's rail network.",
+    title: "Pnuematic Cup Filler",
+    description: "A filtration system that removes particles based on weight or density differences.",
     image: "/lp2.jpeg",
-    icon: "🚆",
+    
   },
   {
-    title: "Consumer Products",
+    title: "Weight Filler",
     description:
-      "Durable fans, pumps and appliances engineered for everyday comfort.",
+      "A screw-based filtration system that moves and separates solid materials from liquids.",
     image: "/lp3.jpeg",
-    icon: "🏠",
+    
   },
   {
-    title: "Industrial Systems",
+    title: "Auger Filler",
     description:
-      "High performance motors and alternators for industrial applications.",
+      "A screw-based filtration system that moves and separates solid materials from liquids.",
     image: "/lp4.jpeg",
-    icon: "🏭",
+  },
+   {
+    title: "Pepsi Machine",
+    description:
+      "A beverage dispensing machine that mixes syrup, carbonated water, and ice to serve soft drinks.",
+    image: "/lp4.jpeg",
+  },
+   {
+    title: "Milk",
+    description:
+      "A nutrient-rich dairy liquid used as a base ingredient in food processing and beverage production",
+    image: "/lp4.jpeg",
+  },
+   {
+    title: "Oil",
+    description:
+      "A lubricating or edible liquid used in food processing, machinery operation, or industrial applications.",
+    image: "/lp4.jpeg",
   },
 ];
 
@@ -72,18 +89,16 @@ export default function SolutionsSection() {
         >
           <motion.h2
             variants={fadeUp}
-            className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6"
+            className="text-3xl md:text-3xl font-bold text-gray-800 leading-tight mb-6 mt-8"
           >
-            Solutions for <br /> Your Packing
+            Innovative Industrial Machinery &  <br />Packaging Solutions
           </motion.h2>
 
           <motion.p
             variants={fadeUp}
-            className="text-gray-600 text-lg mb-8"
+            className="text-gray-600 text-xl mb-8 mt-3"
           >
-            Precision Packing. Powerful Performance.
-            Engineered for speed, accuracy, and reliability in every pouch.<br/>
-            Pack Faster. Pack Better.
+            A strong commitment to innovation, quality, and customer satisfaction, the company helps industries improve productivity and streamline their production processes.
           </motion.p>
 
           {/* Buttons */}
@@ -149,12 +164,6 @@ export default function SolutionsSection() {
 
                   {/* Content */}
                   <div className="p-6 relative">
-                    <motion.div
-                      whileHover={{ rotate: 10, scale: 1.1 }}
-                      className="absolute -top-6 right-6 w-12 h-12 bg-white rounded-full shadow flex items-center justify-center text-green-600"
-                    >
-                      {card.icon}
-                    </motion.div>
 
                     <h3 className="text-lg font-bold text-gray-800 mb-2">
                       {card.title}

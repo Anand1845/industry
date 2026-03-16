@@ -2,7 +2,7 @@ import React from 'react';
 
 const FermenterProductPage = () => {
   const technicalSpecs = [
-    { label: "Model No", value: "PS-5" },
+    { label: "Model No", value: "PS-5-STP" },
     { label: "Type", value: "Mechanical Cup Filler With  Gear" },
     { label: "Diamention", value: "2.5x3x7 Feet" },
     { label: "Weight", value: "250Kg ( Approx )" },
@@ -20,12 +20,12 @@ const FermenterProductPage = () => {
     { label: "Speed", value: "30-40 Ppm (According To Product Flow)" },
     { label: "Sealing Type", value: "Side or Center Seal" },
     { label: "Capacity", value: "1 Gm To 5 Gm" },
-    { label: "Price", value: "1,15,000" },
+    { label: "Price", value: "1,35,000" },
   ];
 
   return (
     <div className="max-w-6xl mx-auto p-6 bg-gray-50 text-gray-800">
-        <h1 className='font-extrabold text-6xl'>2</h1>
+        
       {/* Top Section: Image and Description */}
       <section className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row mb-10">
         <div className="md:w-1/2 p-4 flex items-center justify-center bg-gray-100">
@@ -38,7 +38,7 @@ const FermenterProductPage = () => {
         </div>
         
         <div className="md:w-1/2 p-8">
-          <h1 className="text-3xl font-bold text-slate-800 mb-2">PS-5</h1>
+          <h1 className="text-3xl font-bold text-slate-800 mb-2">PS-5-STP</h1>
           <p className="text-lg font-semibold text-slate-600 mb-4">Capacity: 1 Gm To 5 Gm</p>
           
           <div className="space-y-4 leading-relaxed text-gray-700">

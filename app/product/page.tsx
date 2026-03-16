@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const ProductPage = () => {
   return (
@@ -52,9 +53,9 @@ const ProductPage = () => {
             />
           </div>
           <h3 className="text-2xl font-bold mb-3 text-gray-900">Polestar 5</h3>
-           <a href='/pro' className="flex items-center text-blue-700 font-semibold  hover:underline">
+           <Link href='/pro' className="flex items-center text-blue-700 font-semibold  hover:underline">
             Explore products <ArrowRight className="ml-2 w-4 h-4" />
-          </a>
+          </Link>
         </div>
 
         {/* Product 2: Seals */}
@@ -67,9 +68,9 @@ const ProductPage = () => {
             />
           </div>
           <h3 className="text-2xl font-bold mb-3 text-gray-900">Polestar 50</h3>
-           <button className="flex items-center text-blue-700 font-semibold hover:underline">
+           <Link href='/pole' className="flex items-center text-blue-700 font-semibold  hover:underline">
             Explore products <ArrowRight className="ml-2 w-4 h-4" />
-          </button>
+          </Link>
         </div>
 
         {/* Product 3: Lubrication */}
@@ -82,9 +83,9 @@ const ProductPage = () => {
             />
           </div>
           <h3 className="text-2xl font-bold mb-3 text-gray-900">Polestar 100</h3>
-           <button className="flex items-center text-blue-700 font-semibold  hover:underline">
+           <Link href='/pol' className="flex items-center text-blue-700 font-semibold  hover:underline">
             Explore products <ArrowRight className="ml-2 w-4 h-4" />
-          </button>
+          </Link>
         </div>
 
       </main>

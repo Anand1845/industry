@@ -15,8 +15,8 @@ export default function ProductsPage() {
             height={200}
             className="rounded-lg"
           />
-          <h2 className="text-xl font-semibold mt-3">PS-5</h2>
-          <Link href="/psf">
+          <h2 className="text-xl font-semibold mt-3">PS-100</h2>
+          <Link href="/polh">
             <button className="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
               View Product
             </button>
@@ -32,8 +32,8 @@ export default function ProductsPage() {
             height={200}
             className="rounded-lg"
           />
-          <h2 className="text-xl font-semibold mt-3">PS-5-V</h2>
-          <Link href="/psfv">
+          <h2 className="text-xl font-semibold mt-3">PS-100-V</h2>
+          <Link href="/polhv">
             <button className="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
               View Product
             </button>
@@ -49,14 +49,15 @@ export default function ProductsPage() {
             height={200}
             className="rounded-lg"
           />
-          <h2 className="text-xl font-semibold mt-3">PS-5-STP</h2>
-          <Link href="/psfs">
+          <h2 className="text-xl font-semibold mt-3">PS-100-STP</h2>
+          <Link href="/polhs">
             <button className="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
               View Product
             </button>
           </Link>
         </div>
 
+          {/* Card 4 */}
          <div className="bg-white rounded-xl shadow-md p-4 text-center">
           <Image
             src="/lp4.jpeg"
@@ -65,8 +66,8 @@ export default function ProductsPage() {
             height={200}
             className="rounded-lg"
           />
-          <h2 className="text-xl font-semibold mt-3">PS-5-STP-V</h2>
-          <Link href="/psfsv">
+          <h2 className="text-xl font-semibold mt-3">PS-100-STP-V</h2>
+          <Link href="/polhsv">
             <button className="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
               View Product
             </button>
