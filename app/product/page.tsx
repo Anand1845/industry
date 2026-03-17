@@ -1,9 +1,12 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import Phero from '../components/Phero';
 
 const ProductPage = () => {
   return (
+    <>
+    <Phero/>
     <div className="max-w-7xl mx-auto p-8 flex flex-col md:flex-row gap-12 bg-gray-50 min-h-screen">
       
       {/* Sidebar - Left Side */}
@@ -90,6 +93,7 @@ const ProductPage = () => {
 
       </main>
     </div>
+    </>
   );
 };
 

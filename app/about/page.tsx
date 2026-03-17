@@ -88,7 +88,7 @@ export default function ConstructionPage() {
             <div className="flex gap-6 mb-6">
               <span className="text-7xl font-bold text-orange-500 leading-none">28</span>
               <div className="pt-2">
-                <h3 className="font-bold text-lg tracking-tight">YEARS IN CLOSED DIE HOT FORGINGS</h3>
+                <h3 className="font-bold text-lg tracking-tight">Conch Industrial Solution Pvt. Ltd.</h3>
               </div>
             </div>
             <div className="space-y-4 text-gray-600 leading-relaxed text-sm md:text-base">
@@ -114,7 +114,7 @@ export default function ConstructionPage() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section className="py-12 px-6 max-w-7xl mx-auto">
+      {/* <section className="py-12 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="w-12 h-1 bg-amber-500 mx-auto mb-4"></div>
           <h2 className="text-3xl font-bold text-zinc-800 uppercase tracking-tighter">Our Services</h2>
@@ -130,12 +130,12 @@ export default function ConstructionPage() {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* CONTENT SECTIONS */}
       <div className="py-20 px-4 md:px-20 space-y-32">
         {/* Section 1 */}
-        <motion.section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
+        {/* <motion.section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#0a1d37] leading-tight mb-6">We Provide Full Range Of Premium Industrial Services</h2>
             <p className="text-gray-500 leading-relaxed mb-8">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Lorem ipsum dolor sit amet elit.</p>
@@ -144,10 +144,10 @@ export default function ConstructionPage() {
           <div className="relative h-100 w-full rounded-lg overflow-hidden shadow-xl">
             <Image src="/c2.jpg" alt="Industrial machinery" fill className="object-cover" />
           </div>
-        </motion.section>
+        </motion.section> */}
 
         {/* Section 2 */}
-        <motion.section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
+        {/* <motion.section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
           <div className="relative h-100 w-full rounded-lg overflow-hidden shadow-xl order-2 md:order-1">
             <Image src="/c5.jpeg" alt="Engineers looking at blueprints" fill className="object-cover" />
           </div>
@@ -157,10 +157,10 @@ export default function ConstructionPage() {
             <FeatureList />
             <Button text="Read More" />
           </div>
-        </motion.section>
+        </motion.section> */}
 
         {/* Section 3 */}
-        <motion.section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
+        {/* <motion.section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
           <div>
             <div className="flex items-center gap-2 mb-4">
               <span className="w-8 h-0.5 bg-yellow-500"></span>
@@ -175,7 +175,7 @@ export default function ConstructionPage() {
           <div className="relative h-100 w-full rounded-lg overflow-hidden shadow-xl">
             <Image src="/c6.jpeg" alt="Industrial worker" fill className="object-cover" />
           </div>
-        </motion.section>
+        </motion.section> */}
 
         <Manage />
         <h1 className="text-4xl font-medium">OUR JOURNEY</h1>

@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#ed1d1de4] text-white py-12 px-6 md:px-16 font-sans border-t border-gray-900">
+    <footer className="bg-black text-white py-12 px-6 md:px-16 font-sans border-t border-gray-900">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         
         {/* Company Bio */}
@@ -76,16 +76,16 @@ const Footer = () => {
           <h3 className="text-white text-lg font-semibold mb-5">Contact</h3>
           <ul className="space-y-5 text-sm">
             <li className="flex items-start gap-3">
-              <MapPin size={20} className="text-black shrink-0" />
+              <MapPin size={20} className="text-white shrink-0" />
               <span className="leading-snug">
                  S.N.232/1,Sharma Building Pune-Nashik Road, Opp Bank Of Baroda,Bhosari,Pune 411039.</span>
             </li>
             <li className="flex items-center gap-3">
-              <Phone size={18} className="text-black shrink-0" />
+              <Phone size={18} className="text-white shrink-0" />
               <span>+91 9766138282</span>
             </li>
             <li className="flex items-center gap-3">
-              <Phone size={18} className="text-black shrink-0" />
+              <Phone size={18} className="text-white shrink-0" />
               <span>+91 9766138282</span>
             </li>
             <li className="flex items-center gap-3">
@@ -100,9 +100,9 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-[11px] tracking-wider text-white uppercase">
-        <p>© 2025 XYZ COMPANY. All rights reserved.</p>
+        <p>© 2025 Conch Industrial Solution PVT. LTD. All rights reserved.</p>
         <p className="mt-2">
-          Developed By <span className="text-white font-bold">DW INNOVATION PVT. LTD.</span>
+          Developed By <span className="text-white font-bold"> Qiro Tech Innovation Pvt. Ltd. </span>
         </p>
       </div>
     </footer>

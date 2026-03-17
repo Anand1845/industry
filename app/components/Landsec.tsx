@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const PackagingLanding = () => {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16 bg-white font-sans text-gray-800">
+    <div className="max-w-8xl mx-auto px-20 py-16 bg-white font-sans text-gray-800">
       {/* Header Section */}
       <header className="mb-16">
         <h1 className="text-4xl md:text-5xl font-extrabold text-[#1a202c] leading-tight max-w-4xl">

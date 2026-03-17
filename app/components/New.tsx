@@ -14,37 +14,37 @@ interface SectionData {
 const sections: SectionData[] = [
   {
     id: 0,
-    prefix: "OUR DELIVERY APPROACH",
-    title: "Structured Delivery,\nPredictable Results.",
-    stepTitle: "1. Discovery",
-    items: ["User Flows", "Wireframes", "Design System"],
+    prefix: "OUR SERVICES APPROACH",
+    title: "Industrial Filling Machine Solutions",
+    stepTitle: "1. Filling",
+    items: ["High-Precision Filling", "Multi-Product Compatibility", "Efficient Production Output"],
     image:
       "/lp4.jpeg",
   },
   {
     id: 1,
-    prefix: "OUR DELIVERY APPROACH",
-    title: "Design for\nScalability.",
-    stepTitle: "2. Design",
-    items: ["High-Fidelity UI", "Prototyping", "Asset Handoff"],
+    prefix: "OUR SERVICES APPROACH",
+    title: "Packaging Automation Systems",
+    stepTitle: "2. Packaging",
+    items: ["Smart Packaging Automation", "Labor Cost Reduction", "Faster Turnaround Time"],
     image:
       "/lp2.jpeg",
   },
   {
     id: 2,
-    prefix: "OUR DELIVERY APPROACH",
-    title: "Agile Development,\nSeamless Integration.",
-    stepTitle: "3. Build",
-    items: ["Frontend Dev", "API Integration", "Quality Assurance"],
+    prefix: "OUR SERVICES APPROACH",
+    title: "Customized Machinery Development",
+    stepTitle: "3. Machinery",
+    items: ["Tailor-Made Equipment", "Process Optimization", "Seamless Integration"],
     image:
       "/lp1.jpeg",
   },
   {
     id: 3,
-    prefix: "OUR DELIVERY APPROACH",
-    title: "Launch and\nContinuous Growth.",
+    prefix: "OUR SERVICES APPROACH",
+    title: "Installation & After-Sales Support",
     stepTitle: "4. Deployment",
-    items: ["Cloud Hosting", "Analytics Setup", "Post-Launch Support"],
+    items: ["On-Site Installation", "Routine Maintenance", "Rapid Technical Support"],
     image:
       "/lp.jpeg",
   },

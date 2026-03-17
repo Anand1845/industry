@@ -28,7 +28,7 @@ const Navbar = () => {
     className="relative overflow-hidden px-3 py-2 group flex items-center gap-1"
   >
     <span className="relative z-10 flex items-center gap-1">
-      About US <ChevronDown size={14} />
+      About US 
     </span>
     <span className="absolute bottom-0 left-0 w-full h-0 bg-[#b8312e] transition-all duration-300 group-hover:h-full"></span>
   </a>
@@ -38,7 +38,7 @@ const Navbar = () => {
     className="relative overflow-hidden px-3 py-2 group flex items-center gap-1"
   >
     <span className="relative z-10 flex items-center gap-1">
-      Products <ChevronDown size={14} />
+      Products 
     </span>
     <span className="absolute bottom-0 left-0 w-full h-0 bg-[#b8312e] transition-all duration-300 group-hover:h-full"></span>
   </a>
@@ -47,7 +47,7 @@ const Navbar = () => {
     href="#"
     className="relative overflow-hidden px-3 py-2 group"
   >
-    <span className="relative z-10">Brosher</span>
+    <span className="relative z-10">Brocher</span>
     <span className="absolute bottom-0 left-0 w-full h-0 bg-[#b8312e] transition-all duration-300 group-hover:h-full"></span>
   </a>
   
@@ -56,7 +56,7 @@ const Navbar = () => {
     className="relative overflow-hidden px-3 py-2 group flex items-center gap-1"
   >
     <span className="relative z-10 flex items-center gap-1">
-      Contact Us <ChevronDown size={14} />
+      Contact Us 
     </span>
     <span className="absolute bottom-0 left-0 w-full h-0 bg-[#b8312e] transition-all duration-300 group-hover:h-full"></span>
   </a>

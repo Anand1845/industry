@@ -13,21 +13,21 @@ const cards = [
   },
   {
     title: "Pnuematic Cup Filler",
-    description: "A filtration system that removes particles based on weight or density differences.",
+    description: "A filtration system that removes particles based on weight and heavy or density differences.",
     image: "/lp2.jpeg",
     
   },
   {
     title: "Weight Filler",
     description:
-      "A screw-based filtration system that moves and separates solid materials from liquids.",
+      "A screw-based filtration system that easy moves and separates or break solid materials from liquids.",
     image: "/lp3.jpeg",
     
   },
   {
     title: "Auger Filler",
     description:
-      "A screw-based filtration system that moves and separates solid materials from liquids.",
+      "A screw-based filtration system that moves and separates or different solid materials from liquids.",
     image: "/lp4.jpeg",
   },
    {
@@ -80,7 +80,7 @@ export default function SolutionsSection() {
       className="relative w-full bg-white py-24 overflow-hidden"
     >
       {/* MAIN CONTAINER WITH LEFT & RIGHT PADDING */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16  md:px-12 lg:px-5">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16  md:px-12 lg:px-2">
 
         {/* LEFT CONTENT */}
         <motion.div
@@ -89,20 +89,20 @@ export default function SolutionsSection() {
         >
           <motion.h2
             variants={fadeUp}
-            className="text-3xl md:text-3xl font-bold text-gray-800 leading-tight mb-6 mt-8"
+            className="text-3xl md:text-3xl font-bold text-gray-800 leading-tight mb-6 mt-10"
           >
             Innovative Industrial Machinery &  <br />Packaging Solutions
           </motion.h2>
 
           <motion.p
             variants={fadeUp}
-            className="text-gray-600 text-xl mb-8 mt-3"
+            className="text-gray-600 text-xl mb-8 mt-8"
           >
             A strong commitment to innovation, quality, and customer satisfaction, the company helps industries improve productivity and streamline their production processes.
           </motion.p>
 
           {/* Buttons */}
-          <motion.div variants={fadeUp} className="flex gap-4">
+          {/* <motion.div variants={fadeUp} className="flex gap-4">
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -118,7 +118,7 @@ export default function SolutionsSection() {
             >
               <ArrowRight className="w-5 h-5 text-gray-600" />
             </motion.button>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
 
         {/* RIGHT SLIDER */}
@@ -176,7 +176,7 @@ export default function SolutionsSection() {
                     <motion.a
                       whileHover={{ x: 5 }}
                       href="#"
-                      className="flex items-center gap-2 text-blue-700 font-semibold"
+                      className="flex items-center gap-2 text-[#b8312e] font-semibold"
                     >
                       Know More
                       <motion.span whileHover={{ x: 4 }}>

@@ -12,37 +12,53 @@ export default function Home() {
     <main>
       {/* HERO SECTION */}
       <section className="relative h-[85vh] w-full flex items-center overflow-hidden">
-        {/* Background Image with Gradient Overlay */}
-        <div
-          className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, white 30%, transparent 70%), url('https://thumbs.dreamstime.com/b/automatic-packaging-machine-working-pile-cardboard-boxes-interior-spacious-warehouse-background-work-116610728.jpg')",
-          }}
+      
+      {/* Background Image with Gradient Overlay */}
+      <motion.div
+        initial={{ opacity: 0, scale: 1.05 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        className="absolute inset-0 z-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, white 30%, transparent 70%), url('https://thumbs.dreamstime.com/b/automatic-packaging-machine-working-pile-cardboard-boxes-interior-spacious-warehouse-background-work-116610728.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-white/20" />
+      </motion.div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-2xl ml-10 md:ml-20">
+        
+        <motion.h1
+          initial={{ opacity: 0, x: -80 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9, delay: 0.3 }}
+          className="text-5xl md:text-7xl font-extrabold text-blue-950 leading-tight"
         >
-          {/* Fallback overlay */}
-          <div className="absolute inset-0 bg-white/20" />
-        </div>
+          Premium Packaging Solutions & high quality Industry Machines
+        </motion.h1>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-2xl ml-10 md:ml-20">
+        <motion.button
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.8 }}
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.95 }}
+          className="mt-10 bg-[#b8312e] hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-md transition-all shadow-lg uppercase tracking-wide"
+        >
+          Customize Yours Today
+        </motion.button>
 
-          <h1 className="text-5xl md:text-7xl font-extrabold text-blue-950 leading-tight">
-            Premium Packaging Solutions & high quality Industry Machines
-          </h1>
-
-          <button className="mt-10 bg-[#b8312e] hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-md transition-all shadow-lg uppercase tracking-wide">
-            Customize Yours Today
-          </button>
-        </div>
-      </section>
+      </div>
+    </section>
 
       {/* LANDING SECTION */}
       <Landsec />
 
       {/* SUB BUSINESSES */}
       <div className="w-full bg-white py-12">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-8xl mx-auto px-20">
           <div className="flex items-start justify-between w-full group cursor-pointer">
             {/* Text */}
             <div className="flex flex-col space-y-2">
